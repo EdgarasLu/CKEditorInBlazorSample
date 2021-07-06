@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome CKEditor5 in Blazor.
+<br />
+
+<i>@editorValue</i>
+
+<EditorComponent EditorHeight="200px" EditorWidth="600px" @bind-EditorValue="@editorValue"></EditorComponent>
+
+@code
+{
+    string editorValue { get; set; } = "I hope you see me :)";
+}
